@@ -192,7 +192,7 @@ h1, h2, h3 {
 /* Responsive: Mobile zeigt nur die mobile Tabelle, Desktop nur die große */
 @media (max-width: 746px) {
     html, body {
-        height: 100dvh;
+        height: 100vh;
     }
     body {
         min-height: 100dvh;
