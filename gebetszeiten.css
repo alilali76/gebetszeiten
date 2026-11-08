@@ -209,10 +209,10 @@ h1, h2, h3 {
         margin-bottom: 2em;
     }
     #dateInput {
-        width: 70%;
+        width: 50%;
         height: 2em;
         font-family: 'Poppins';
-        border-radius: 6px;
+        border-radius: 10px;
     }
 }
 

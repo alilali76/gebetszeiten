@@ -3,10 +3,11 @@ const table = document.getElementById("gebetszeitensammlung");
 const Row = getRowByDate(table, date);
 const prayerDisplayTable = document.getElementById("gebetszeiten");
 const prayerDisplayTableMobile = document.getElementById("gebetszeitenmobil");
+let dateInput = document.getElementById("dateInput");
 
-console.log(date);
-console.log(Row);
-console.log(table);
+function updateDateInput() {
+    dateInput.value = new Date().toISOString().split("T")[0]; // Set the date input to today's date in YYYY-MM-DD format
+}
 
 // Function to find the table row matching the current date
 function getRowByDate(table, dateStr) {
@@ -24,8 +25,8 @@ function getRowByDate(table, dateStr) {
 function displayPrayerTimes(row) {
     console.log(row);
     if(row == null) {
-        console.log("date deleted");
         row = Row;
+        updateDateInput();
     }
     for(let i = 0; i < row.cells.length; i++) {
         // Update desktop table
@@ -44,3 +45,4 @@ function updatePrayerTimes() {
 }
 
 displayPrayerTimes(Row);
+updateDateInput();
