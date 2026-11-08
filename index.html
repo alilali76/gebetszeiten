@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>namazsaatleri</title>
-    <script src="gebetszeiten.js"></script>
     <link rel="stylesheet" href="gebetszeiten.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
@@ -14,7 +13,10 @@
 </head>
 <body>
 
-    <h1>Hagen 2026 Namaz Saatleri</h1>
+<h1>Hagen 2026 Namaz Saatleri</h1>
+
+<input type="date" id="dateInput" onchange="updatePrayerTimes()">
+
 <table id="gebetszeiten">
     <thead>
         <tr>
@@ -833,4 +835,5 @@
 
     
 </body>
+    <script src="gebetszeiten.js"></script>
 </html>

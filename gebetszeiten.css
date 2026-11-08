@@ -174,6 +174,21 @@ h1, h2, h3 {
     display: none;
 }
 
+#dateInput {
+    margin-top: 1em;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    font-size: 1.3em;
+    font-family: 'Poppins';
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 200px;
+    text-align: center;
+}
+#dateInput i{
+    width: 3em;
+    height: 3em;
+}
+
 /* Responsive: Mobile zeigt nur die mobile Tabelle, Desktop nur die große */
 @media (max-width: 746px) {
     html, body {
